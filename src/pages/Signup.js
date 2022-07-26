@@ -2,12 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Form } from "react-bootstrap"
-import NavBar from "../components/Nav"
+import Layout from "../components/Layout"
 
 function Signup() {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <div className="container main-container-signup">
         <p
           style={{
@@ -67,7 +66,7 @@ function Signup() {
           </p>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

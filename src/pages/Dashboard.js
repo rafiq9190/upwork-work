@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { FaRegUserCircle } from "react-icons/fa"
-import NavBar from "../components/Nav"
+import Layout from "../components/Layout"
 
 function Dashboard() {
   const [isOpen, setisOpen] = useState(false)
@@ -13,8 +13,7 @@ function Dashboard() {
     setdropOpen(!dropOpen)
   }
   return (
-    <>
-      <NavBar />
+    <Layout>
       <div className="dashboard-container">
         <div className="dashboard-sidebar">
           <div className="sidebar-header">Logo</div>
@@ -196,36 +195,42 @@ function Dashboard() {
               </div>
             </div>
           </div>
+          <div className="help-center sw-help-center"></div>
         </div>
 
         <div className="dashboard-main">
-          <div className="d-flex justify-content-end">
-            <FaRegUserCircle
-              style={{
-                color: "#AFAFB5",
-                fontSize: "25px",
-                marginTop: "10px",
-                position: "relative",
-              }}
-              onClick={clickHandler}
-            />
+          <div className="d-flex justify-content-end left-side">
+            <div>
+              <button className="btn-trail">Start free trail</button>
+            </div>
+            <div>
+              <FaRegUserCircle
+                style={{
+                  color: "#AFAFB5",
+                  fontSize: "30px",
 
-            {isOpen ? (
-              <div className="header-action-dropdown">
-                <div className="header-action">
-                  <i className="sw-user"></i>
-                  <span className="user-details">My account</span>
+                  position: "relative",
+                }}
+                onClick={clickHandler}
+              />
+
+              {isOpen ? (
+                <div className="header-action-dropdown">
+                  <div className="header-action">
+                    <i className="sw-user"></i>
+                    <span className="user-details">My account</span>
+                  </div>
+                  <div className="header-action">
+                    <i className="sw-dashboard"></i>
+                    <span className="user-details">Dashboard</span>
+                  </div>
+                  <div className="header-action">
+                    <i className="sw-power"></i>
+                    <span className="user-details">Sign out</span>
+                  </div>
                 </div>
-                <div className="header-action">
-                  <i className="sw-dashboard"></i>
-                  <span className="user-details">Dashboard</span>
-                </div>
-                <div className="header-action">
-                  <i className="sw-power"></i>
-                  <span className="user-details">Sign out</span>
-                </div>
-              </div>
-            ) : null}
+              ) : null}
+            </div>
           </div>
           <div className="template-area">
             <h1 className="mb-3">Templates</h1>
@@ -388,7 +393,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

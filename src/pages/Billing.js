@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 
 import { Dropdown } from "react-bootstrap"
-import NavBar from "../components/Nav"
+
+import Layout from "../components/Layout"
 
 function Billing() {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <div style={{ backgroundColor: "#f8f9fa" }}>
         <div className="user-billing">
           <h2 className="mb-4 mt-2">Billing</h2>
@@ -58,7 +58,7 @@ function Billing() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

@@ -2,12 +2,11 @@ import React from "react"
 import { Card, Form } from "react-bootstrap"
 import { BsSearch, BsPlus } from "react-icons/bs"
 
-import NavBar from "../components/Nav"
+import Layout from "../components/Layout"
 
 function Home() {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <div className="container ">
         <h2 className="mt-2">Start with a Template</h2>
         <div className="row mt-4 ">
@@ -127,7 +126,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from "react"
 import { Card, Form } from "react-bootstrap"
 import { BsSearch, BsPlus } from "react-icons/bs"
+import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 
@@ -36,6 +37,11 @@ function Home() {
                 <option value="7">Resource Directories (9)</option>
                 <option value="7">Websites (12)</option>
               </Form.Select>
+            </div>
+            <div className="request-link">
+              <Link to="#" style={{ color: "#6f87d5", fontSize: "16px" }}>
+                Request new template
+              </Link>
             </div>
           </div>
           <div className="home-right col-lg-10 ">

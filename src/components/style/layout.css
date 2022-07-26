@@ -770,12 +770,12 @@ dropdown-menu.show {
 }
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   .main-container {
-    width: 75%;
-    margin: 8rem auto;
+    width: 75% !important;
+    margin: 8rem auto !important;
   }
   .main-container-signup {
-    width: 75%;
-    margin: 4rem auto;
+    width: 75% !important;
+    margin: 4rem auto !important;
   }
   .case-body-select {
     display: none;
@@ -784,24 +784,24 @@ dropdown-menu.show {
     display: block;
   }
   .home-left {
-    width: 100%;
+    width: 100% !important;
 
     margin-bottom: 1rem;
   }
   .home-right {
-    width: 86%;
+    width: 86% !important;
   }
   .card {
-    width: 95%;
+    width: 95% !important;
   }
   .card-template {
-    width: 95%;
+    width: 95% !important;
   }
   .dashboard-sidebar {
     display: none;
   }
   .dashboard-main {
-    width: 100%;
+    width: 100% !important;
     margin-left: 0px;
   }
   .sw-openArrow {
@@ -810,11 +810,11 @@ dropdown-menu.show {
 }
 @media only screen and (min-width: 768px) and (max-width: 950px) {
   .main-container {
-    width: 75%;
+    width: 75% !important;
     margin: 8rem auto;
   }
   .main-container-signup {
-    width: 75%;
+    width: 75% !important;
     margin: 4rem auto;
   }
 }

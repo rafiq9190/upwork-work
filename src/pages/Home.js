@@ -1,7 +1,7 @@
 import React from "react"
 import { Card, Form } from "react-bootstrap"
 import { BsSearch, BsPlus } from "react-icons/bs"
-import { Layout } from "../components/layout"
+
 import NavBar from "../components/Nav"
 
 function Home() {

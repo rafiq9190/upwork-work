@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import { FaRegUserCircle } from "react-icons/fa"
 import Layout from "../components/Layout"
+import Modals from "../components/Modal"
 
 function Dashboard() {
   const [isOpen, setisOpen] = useState(false)
   const [dropOpen, setdropOpen] = useState(false)
+  const [modalShow, setModalShow] = useState(false)
 
   const clickHandler = () => {
     setisOpen(!isOpen)
@@ -237,18 +239,25 @@ function Dashboard() {
             <div className="template-body">
               <div className="template-wrapper">
                 <div className="template-items">
-                  <div className="template-item-body ">
+                  <div
+                    className="template-item-body "
+                    onClick={() => setModalShow(true)}
+                  >
                     <div className="template-inner"></div>
                   </div>
                   <div className="template-item-title">New Application</div>
                 </div>
                 <div className="template-item">
-                  <div className="template-item-body ">
+                  <div className="template-item-body  ">
                     <div className="template-inners"></div>
                     <div className="body-content">
                       Select
                       <i className="sw-arrow"></i>
                     </div>
+                    <Modals
+                      show={modalShow}
+                      onHide={() => setModalShow(false)}
+                    />
                   </div>
                   <div className="template-item-title">Client Portal</div>
                 </div>

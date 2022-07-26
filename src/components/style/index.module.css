@@ -819,6 +819,10 @@ dropdown-menu.show {
 .sw-help-center {
   background-image: url("../../images/help.svg");
 }
+.my-modal {
+  width: 90vw !important; /* Occupy the 90% of the screen width */
+  max-width: 90vw !important;
+}
 @media only screen and (min-width: 280px) and (max-width: 767px) {
   .main-container {
     width: 75% !important;

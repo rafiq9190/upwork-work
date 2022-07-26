@@ -14,9 +14,6 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <div className="d-flex justify-content-between">
-                <Link style={{ margin: "1rem" }} to="/Home">
-                  Home
-                </Link>
                 <Link style={{ margin: "1rem" }} to="/Signup">
                   SignUp
                 </Link>

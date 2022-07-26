@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { FaRegUserCircle } from "react-icons/fa"
 import NavBar from "../components/Nav"
+
 function Dashboard() {
   const [isOpen, setisOpen] = useState(false)
   const [dropOpen, setdropOpen] = useState(false)
@@ -13,6 +14,7 @@ function Dashboard() {
   }
   return (
     <>
+      <NavBar />
       <div className="dashboard-container">
         <div className="dashboard-sidebar">
           <div className="sidebar-header">Logo</div>

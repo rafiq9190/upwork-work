@@ -7,6 +7,7 @@ import NavBar from "../components/Nav"
 function Home() {
   return (
     <>
+      <NavBar />
       <div className="container ">
         <h2 className="mt-2">Start with a Template</h2>
         <div className="row mt-4 ">
@@ -43,9 +44,8 @@ function Home() {
               <Form.Control
                 type="search"
                 placeholder="Search"
-                className="me-2"
+                className="me-2 bg-light"
                 aria-label="Search"
-                className="bg-light"
               />
               <div className="search-icon">
                 <BsSearch />

@@ -7,6 +7,7 @@ import NavBar from "../components/Nav"
 function Signup() {
   return (
     <>
+      <NavBar />
       <div className="container main-container-signup">
         <p
           style={{

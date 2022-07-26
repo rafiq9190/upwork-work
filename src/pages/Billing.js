@@ -6,6 +6,7 @@ import NavBar from "../components/Nav"
 function Billing() {
   return (
     <>
+      <NavBar />
       <div style={{ backgroundColor: "#f8f9fa" }}>
         <div className="user-billing">
           <h2 className="mb-4 mt-2">Billing</h2>
